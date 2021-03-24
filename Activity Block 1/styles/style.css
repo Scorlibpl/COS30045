@@ -1,0 +1,46 @@
+h1 {
+  font-family: impact, fantasy;
+  color:#FFB6C1;
+}
+
+h2 {
+  font-family: Palatino, URW Palladio L, serif;
+}
+
+img {
+  width: 100%
+}
+
+figure{
+  display: table;
+}
+
+figcaption {
+  font-style: italic;
+  display: table-caption;
+  caption-side: bottom;
+}
+
+footer {
+  background-color: #D0D0D0;
+}
+
+button {
+  font-family: comic sans ms, comic sans, cursive;
+}
+
+.b1 {
+  background-color: lightblue;
+  width: 60px;
+  height: 30px;
+  color: white;
+  border: white;
+}
+
+.b2 {
+  background-color: orange;
+  width: 60px;
+  height: 30px;
+  color: white;
+  border: white;
+}
