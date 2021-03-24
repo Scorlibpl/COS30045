@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Data Visualisation Exercise 1.4 - D3"/>
+    <meta name="keywords" content="HTML, CSS, D3"/>
+    <meta name="author" content="Scorlib Lexrin"/>
+
+    <title>Task 1.4 D3 Data Binding</title>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+  </head>
+  <body>
+
+    <h1>The D3 Journey starts here...</h1>
+    <script>
+
+    var dataset = [14, 5, 26, 23, 9];
+
+      d3.select("body").selectAll("p")
+        .data(dataset)
+        .enter()
+        .append("p")
+        .text(function(d, i) {
+          if (d > 10)  {
+            return "Warning: Joe watched " + d + " cat videos today.";
+        }
+        else {
+          return "Joe watched " + d + " cat videos today.";
+        }
+        })
+        .style("color", function(d, i) {
+          if (d > 10) {
+            return "red";
+          } else {
+              return "black";
+          }
+        });
+
+    </script>
+
+    <footer style="background-color:#D0D0D0">COS30045 Data Visualisation<br>
+      Scorlib Perjuangan Lexrin</footer>
+  </body>
+  </html>
